@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
   newQuotes: Quotes[] = [
     new Quotes(
-      new Date(2020, 8, 12),
+      new Date(2020, 4, 12),
       'The purpose of our lives is to be happy.',
       'Dalai Lama',
       'John Kimana'

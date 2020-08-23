@@ -33,6 +33,11 @@ export class QuoteComponent implements OnInit {
       'Levis Juma'
     ),
   ];
+
+  quoteDetails(index) {
+    this.lifeQuotes[index].showQuoteDetails = !this.lifeQuotes[index]
+      .showQuoteDetails;
+  }
   constructor() {}
 
   ngOnInit(): void {}

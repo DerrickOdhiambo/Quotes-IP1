@@ -3,10 +3,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div *ngFor="let quote of lifeQuotes">
+        <div *ngFor="let quote of lifeQuotes; let i = index">
           <p>{{ quote.date | date }}</p>
           <p class="font-weight-bold">"{{ quote.quote }}"</p>
-          <app-quote-details></app-quote-details>
+          <button (click)="quoteDetails(i)" class="btn btn-info">
+            Quote Details
+          </button>
+          <app-quote-details
+            *ngIf="quote.showQuoteDetails"
+            [quote]="quote"
+          ></app-quote-details>
           <hr />
         </div>
       </div>

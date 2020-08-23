@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, QuoteFormComponent, QuoteComponent],
+  declarations: [AppComponent, HeaderComponent, QuoteFormComponent, QuoteComponent, QuoteDetailsComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -6,6 +6,7 @@
         <div *ngFor="let quote of lifeQuotes">
           <p>{{ quote.date | date }}</p>
           <p class="font-weight-bold">"{{ quote.quote }}"</p>
+          <app-quote-details></app-quote-details>
           <hr />
         </div>
       </div>

@@ -1,2 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Modak&display=swap");
+body {
+  font-family: "Chilanka", cursive;
+  font-size: 20px;
+}

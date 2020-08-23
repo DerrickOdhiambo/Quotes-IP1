@@ -10,8 +10,14 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, QuoteFormComponent, QuoteComponent, QuoteDetailsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    QuoteFormComponent,
+    QuoteComponent,
+    QuoteDetailsComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

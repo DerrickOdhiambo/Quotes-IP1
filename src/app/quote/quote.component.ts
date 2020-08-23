@@ -7,42 +7,24 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quote.component.css'],
 })
 export class QuoteComponent implements OnInit {
-  lifeQuotes: Quotes[] = [
+  newQuotes: Quotes[] = [
     new Quotes(
-      new Date(2019, 4, 12),
+      new Date(2020, 8, 12),
       'The purpose of our lives is to be happy.',
       'Dalai Lama',
       'John Kimana'
     ),
-    new Quotes(
-      new Date(2020, 0, 31),
-      ' Life is what happens when you are busy making other plans.',
-      'John Lennon',
-      'Sheila Mtu'
-    ),
-    new Quotes(
-      new Date(2017, 2, 24),
-      'Get busy living or get busy dying.',
-      'Stephen King',
-      'Derrick Odhiambo'
-    ),
-    new Quotes(
-      new Date(2018, 9, 1),
-      ' You only live once, but if you do it right, once is enough.',
-      'Mae West',
-      'Levis Juma'
-    ),
   ];
 
   quoteDetails(index) {
-    this.lifeQuotes[index].showQuoteDetails = !this.lifeQuotes[index]
+    this.newQuotes[index].showQuoteDetails = !this.newQuotes[index]
       .showQuoteDetails;
   }
 
   addNewQuote(quote) {
-    let quoteLength = this.lifeQuotes.length;
+    let quoteLength = this.newQuotes.length;
     quote.id = quoteLength + 1;
-    this.lifeQuotes.push(quote);
+    this.newQuotes.push(quote);
   }
 
   constructor() {}

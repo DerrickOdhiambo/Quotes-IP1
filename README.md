@@ -19,14 +19,14 @@
 
 ## Behavior Driven Development
 
-| Behavior                           | Input Example             | Output Example                       |
-| ---------------------------------- | ------------------------- | ------------------------------------ |
-| All input filled                   | Date, Quote, Author, Name | Quote is displayed                   |
-| User clicks quote details button   |                           | Quote details apper                  |
-| User clicks on thumbs-up button    |                           | Like is increamented by 1            |
-| User clicks on thumbs-down button  |                           | Disike is increamented by 1          |
-| User clicks on quote               |                           | Quote is highlighted by a cyan color |
-| User clicks on delete quote button |                           | Quote is removed from the aplication |
+| Behavior                           | Input Example             | Output Example                        |
+| ---------------------------------- | ------------------------- | ------------------------------------- |
+| All input filled                   | Date, Quote, Author, Name | Quote is displayed                    |
+| User clicks quote details button   |                           | Quote details apper                   |
+| User clicks on thumbs-up button    |                           | Like is increamented by 1             |
+| User clicks on thumbs-down button  |                           | Disike is increamented by 1           |
+| User clicks on quote               |                           | Quote is highlighted by a cyan color  |
+| User clicks on delete quote button |                           | Quote is removed from the application |
 
 ### Example
 

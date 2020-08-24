@@ -1,0 +1,10 @@
+#footer-bottom {
+  background-color: #1d6a96;
+  height: 18vh;
+}
+span {
+  margin: 1rem;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 700;
+}

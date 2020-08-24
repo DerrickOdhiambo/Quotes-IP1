@@ -12,6 +12,7 @@ import { HighlightQuoteDirective } from './highlight-quote.directive';
 import { TimeCountPipe } from './time-count.pipe';
 import { LifequoteDetailsComponent } from './lifequote-details/lifequote-details.component';
 import { LovequoteDetailsComponent } from './lovequote-details/lovequote-details.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LovequoteDetailsComponent } from './lovequote-details/lovequote-details
     TimeCountPipe,
     LifequoteDetailsComponent,
     LovequoteDetailsComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

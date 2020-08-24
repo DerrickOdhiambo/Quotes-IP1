@@ -8,6 +8,8 @@
           <input
             type="date"
             [(ngModel)]="newQuote.date"
+            #date="ngModel"
+            [class.is-invalid]="date.invalid && quote.touched"
             class="form-control"
             name="date"
             id="date"
@@ -17,6 +19,8 @@
           <label for="quote">Create A Quote..</label>
           <textarea
             name="quote"
+            #quote="ngModel"
+            [class.is-invalid]="quote.invalid && quote.touched"
             class="form-control"
             id="quote"
             cols="30"
@@ -24,6 +28,11 @@
             [(ngModel)]="newQuote.quote"
             required
           ></textarea>
+          <small
+            class="text-danger"
+            [class.d-none]="quote.valid || quote.untouched"
+            >Quote is required</small
+          >
         </div>
         <div class="form-group">
           <label for="author">Author</label>
@@ -31,10 +40,17 @@
             type="text"
             name="author"
             id="author"
+            #author="ngModel"
+            [class.is-invalid]="author.invalid && quote.touched"
             class="form-control"
             [(ngModel)]="newQuote.author"
             required
           />
+          <small
+            class="text-danger"
+            [class.d-none]="author.valid || author.untouched"
+            >Author is required</small
+          >
         </div>
         <div class="form-group">
           <label for="name">What is your name?</label>
@@ -43,11 +59,24 @@
             name="name"
             id="name"
             [(ngModel)]="newQuote.person"
+            #name="ngModel"
+            [class.is-invalid]="name.invalid && quote.touched"
             class="form-control"
             required
           />
+          <small
+            class="text-danger"
+            [class.d-none]="name.valid || name.untouched"
+            >Name is required</small
+          >
         </div>
-        <button type="submit" class="btn btn-info">Create Quote</button>
+        <button
+          type="submit"
+          [disabled]="quoteForm.form.invalid"
+          class="btn btn-info"
+        >
+          Create Quote
+        </button>
       </form>
     </div>
   </div>

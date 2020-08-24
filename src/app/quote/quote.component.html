@@ -15,6 +15,7 @@
           <app-quote-details
             *ngIf="quote.showQuoteDetails"
             [quote]="quote"
+            (toDelete)="quoteDelete($event, i)"
           ></app-quote-details>
           <hr />
         </div>

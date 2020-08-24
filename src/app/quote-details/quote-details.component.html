@@ -5,7 +5,11 @@
       Delete Quote?
     </button>
   </p>
-  <p>This quote was submitted by {{ quote.person }}</p>
+  <p>
+    This quote was posted by {{ quote.person }}
+    <span id="days">{{ quote.date | timeCount }}</span>
+    days ago.
+  </p>
   <div class="d-flex">
     <div>
       <p>{{ numberOfLikes }}</p>

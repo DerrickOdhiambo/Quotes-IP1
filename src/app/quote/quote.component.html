@@ -7,7 +7,7 @@
       <div class="col-md-7">
         <h3>New Quotes</h3>
         <div *ngFor="let quote of newQuotes; let i = index">
-          <p id="date-text">{{ quote.date | date }}</p>
+          <p id="date-text">Posted on {{ quote.date | date }}</p>
           <p appHighlightQuote class="font-weight-bold">"{{ quote.quote }}"</p>
           <button (click)="quoteDetails(i)" class="btn btn-info">
             Quote Details

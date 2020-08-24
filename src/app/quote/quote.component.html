@@ -30,6 +30,14 @@
       <div *ngFor="let life of lifeQuotes; let i = index">
         <p id="date-text">Posted on {{ life.date | date }}</p>
         <p appHighlightQuote class="font-weight-bold">"{{ life.quote }}"</p>
+        <button (click)="lifeQuoteDetails(i)" class="btn btn-info">
+          Quote Details
+        </button>
+        <app-lifequote-details
+          *ngIf="life.showQuoteDetails"
+          [life]="life"
+          (toDelete)="lifeQuoteDelete($event, i)"
+        ></app-lifequote-details>
         <hr />
       </div>
     </div>

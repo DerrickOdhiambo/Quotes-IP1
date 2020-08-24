@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
+import { typeWithParameters } from '@angular/compiler/src/render3/util';
 
 @Component({
   selector: 'app-quote',
@@ -63,6 +64,10 @@ export class QuoteComponent implements OnInit {
       .showQuoteDetails;
   }
 
+  lifeQuoteDetails(index) {
+    this.lifeQuotes[index].showQuoteDetails = !this.lifeQuotes[index]
+      .showQuoteDetails;
+  }
   addNewQuote(quote) {
     let quoteLength = this.newQuotes.length;
     quote.id = quoteLength + 1;
@@ -72,6 +77,12 @@ export class QuoteComponent implements OnInit {
   quoteDelete(toDelete, index) {
     if (toDelete) {
       this.newQuotes.splice(index, 1);
+    }
+  }
+
+  lifeQuoteDelete(toDelete, index) {
+    if (toDelete) {
+      this.lifeQuotes.splice(index, 1);
     }
   }
   constructor() {}

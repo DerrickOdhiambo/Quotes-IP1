@@ -1,0 +1,29 @@
+<div class="container">
+  <p class="font-italic pt-2">Author: {{ life.author }}</p>
+  <p>
+    This quote was posted by {{ life.person }}
+    <span id="days">{{ life.date | timeCount }}</span>
+    days ago.
+  </p>
+  <div class="d-flex">
+    <div class="d-flex">
+      <div>
+        <button (click)="likeButtonClick()" class="btn btn-success mr-3">
+          {{ numberOfLikes
+          }}<i class="fa fa-thumbs-up ml-3" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div>
+        <button (click)="dislikeButtonClick()" class="btn btn-danger">
+          {{ numberOfDislikes
+          }}<i class="fa fa-thumbs-down ml-3" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div>
+      <button (click)="lifeQuoteDelete(true)" class="btn btn-warning ml-5">
+        <i class="fa fa-trash" aria-hidden="true"></i>Delete Quote?
+      </button>
+    </div>
+  </div>
+</div>

@@ -68,6 +68,12 @@ export class QuoteComponent implements OnInit {
     this.lifeQuotes[index].showQuoteDetails = !this.lifeQuotes[index]
       .showQuoteDetails;
   }
+
+  loveQuoteDetails(index) {
+    this.loveQuotes[index].showQuoteDetails = !this.loveQuotes[index]
+      .showQuoteDetails;
+  }
+
   addNewQuote(quote) {
     let quoteLength = this.newQuotes.length;
     quote.id = quoteLength + 1;

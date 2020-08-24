@@ -1,1 +1,8 @@
-<p>lovequote-details works!</p>
+<div class="container">
+  <p class="font-italic pt-2">Author: {{ love.author }}</p>
+  <p>
+    This quote was posted by {{ love.person }}
+    <span id="days">{{ love.date | timeCount }}</span>
+    days ago.
+  </p>
+</div>

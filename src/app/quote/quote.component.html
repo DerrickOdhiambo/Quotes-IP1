@@ -46,6 +46,13 @@
       <div *ngFor="let love of loveQuotes; let i = index">
         <p id="date-text">Posted on {{ love.date | date }}</p>
         <p appHighlightQuote class="font-weight-bold">"{{ love.quote }}"</p>
+        <button (click)="loveQuoteDetails(i)" class="btn btn-info">
+          Quote Details
+        </button>
+        <app-lovequote-details
+          *ngIf="love.showQuoteDetails"
+          [love]="love"
+        ></app-lovequote-details>
         <hr />
       </div>
     </div>

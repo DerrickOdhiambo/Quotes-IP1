@@ -91,6 +91,13 @@ export class QuoteComponent implements OnInit {
       this.lifeQuotes.splice(index, 1);
     }
   }
+
+  loveQuoteDelete(toDelete, index) {
+    if (toDelete) {
+      this.loveQuotes.splice(index, 1);
+    }
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

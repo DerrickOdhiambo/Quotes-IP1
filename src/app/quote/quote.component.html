@@ -52,6 +52,7 @@
         <app-lovequote-details
           *ngIf="love.showQuoteDetails"
           [love]="love"
+          (toDelete)="loveQuoteDelete($event, i)"
         ></app-lovequote-details>
         <hr />
       </div>

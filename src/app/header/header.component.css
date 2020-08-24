@@ -12,7 +12,7 @@ body {
   background: black;
 }
 #header-section {
-  background: url("/assets/images/img2.jpg");
+  background: url("../images/img2.jpg");
   height: 60vh;
   background-position: center;
   background-size: cover;

@@ -9,6 +9,13 @@ h3 {
   margin: 2rem 0 3rem 0;
   box-shadow: -1px 9px 18px 15px rgba(0, 0, 0, 0.53);
 }
-#date-text{
+#date-text {
   text-decoration: underline;
+}
+#footer {
+  background-image: url("../images/img11.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
